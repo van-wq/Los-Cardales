@@ -1,0 +1,246 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    background: #f6f8fa;
+    color: #222;
+}
+
+/* Header */
+header {
+    background: #1a3a5d;
+    color: #fff;
+    padding: 1.5rem 0 1rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    position: relative;
+}
+
+.header-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.logo-animado {
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    transition: transform 0.3s;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 0.5em;
+    animation: giroLogo 2.5s infinite linear alternate;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(0 0 16px #FFF200);
+    align-content: center;
+}
+
+.logo-animado:hover {
+    transform: scale(1.07) rotate(-5deg);
+}
+
+.header-titulo .logo-animado {
+    margin-bottom: 0;
+    margin-right: 0;
+    width: 70px;
+    height: 70px;
+    animation: giroLogo 2.5s infinite linear alternate;
+    filter: drop-shadow(0 0 16px #FFF200);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover, nav a:focus {
+    background: #fff;
+    color: #1a3a5d;
+}
+
+/* Main */
+main {
+    max-width: 700px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    padding: 2rem;
+}
+
+h1, h2, h3 {
+    color: #FFF200;
+    text-shadow: 1px 1px 8px #FF2D00;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+a {
+    color: #FFF200;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #FF2D00;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-bottom: 2em;
+    background: #232526;
+    color: #FFF200;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px #FF2D0022;
+}
+
+table, th, td {
+    border: none;
+}
+
+th, td {
+    padding: 0.9em;
+    text-align: center;
+}
+
+th {
+    background: linear-gradient(90deg, #FF2D00 0%, #FFF200 100%);
+    color: #181818;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #FFF20044;
+}
+
+tbody tr:nth-child(even) {
+    background: #181818;
+}
+
+tbody tr:nth-child(odd) {
+    background: #232526;
+}
+
+/* Galería */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: center;
+}
+
+.galeria img {
+    width: 220px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 2.5px solid #FFF200;
+    box-shadow: 0 2px 16px #FF2D0044;
+    background: #222;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.galeria img:hover {
+    transform: scale(1.06) rotate(-2deg);
+    box-shadow: 0 4px 32px #FF2D00;
+    border-color: #FF2D00;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea, button {
+    padding: 0.7em;
+    font-size: 1em;
+    border-radius: 7px;
+    border: 1.5px solid #FFF200;
+    background: #181818;
+    color: #FFF200;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #FF2D00;
+}
+
+button {
+    background: linear-gradient(90deg, #FF2D00 0%, #FFF200 100%);
+    color: #181818;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px #222;
+    transition: background 0.2s, color 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #FFF200 0%, #FF2D00 100%);
+    color: #FFF;
+}
+
+/* Footer */
+footer {
+    background: #1a3a5d;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border-radius: 0 0 10px 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 -2px 12px #FF2D0022;
+    z-index: 10;
+}
+
+@media (max-width: 600px) {
+    .header-titulo {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    main {
+        padding: 1rem;
+        margin: 1rem;
+    }
+    nav {
+        gap: 1rem;
+    }
+}
