@@ -1,38 +1,125 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sitio oficial del Campeonato de Fútbol 11 Amateur Los Cardales. Información de equipos, fixture, posiciones y más.">
-    <title>Los Cardales</title>
-    <link rel="icon" href="img/logo.jpg">
-    <link rel="stylesheet" href="css/estilo.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los Cardales Fútbol</title>
+  <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-    <header>
-        <div class="header-titulo">
-            <img src="img/logo.jpg  " class="logo-animado" alt="Escudo del campeonato Los Cardales" width="80" height="80">
-            <h1>Torneo Amateur Los Cardales</h1>
-        </div>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="equipos.html">Equipos</a>
-            <a href="fixture.html">Fixture</a>
-            <a href="posiciones.html">Posiciones</a>
-            <a href="galeria.html">Galería</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Bienvenidos</h2>
-            <p>¡Bienvenidos al sitio oficial del Campeonato de Fútbol 11 Amateur "Los Cardales"!</p>
-            <p>Encontrá aquí la información de equipos, fixture, posiciones y mucho más.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Los Cardales. Todos los derechos reservados.</p>
-    </footer>
+  <!-- Header con navegación -->
+  <header>
+    <div class="logo">
+      <h1>Los Cardales</h1>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#equipos">Equipos</a></li>
+        <li><a href="#fixture">Fixture</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#tabla">Tabla</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </header>
+
+  <!-- Inicio -->
+  <section id="inicio" class="hero">
+    <h2>Campeonato Los Cardales 2025</h2>
+    <p>Pasión por el fútbol, unidos por el deporte ⚽</p>
+  </section>
+
+  <!-- Equipos -->
+  <section id="equipos" class="section">
+    <h2>Equipos</h2>
+    <div class="grid">
+      <div class="card">Equipo 1</div>
+      <div class="card">Equipo 2</div>
+      <div class="card">Equipo 3</div>
+      <div class="card">Equipo 4</div>
+    </div>
+  </section>
+
+  <!-- Fixture -->
+  <section id="fixture" class="section">
+    <h2>Fixture</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Partido</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>01/10/2025</td>
+          <td>Equipo 1 vs Equipo 2</td>
+        </tr>
+        <tr>
+          <td>02/10/2025</td>
+          <td>Equipo 3 vs Equipo 4</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Galería -->
+  <section id="galeria" class="section">
+    <h2>Galería</h2>
+    <div class="grid">
+      <div class="card">Foto 1</div>
+      <div class="card">Foto 2</div>
+      <div class="card">Foto 3</div>
+    </div>
+  </section>
+
+  <!-- Tabla de posiciones -->
+  <section id="tabla" class="section">
+    <h2>Tabla de posiciones</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Equipo</th>
+          <th>Pts</th>
+          <th>PJ</th>
+          <th>PG</th>
+          <th>PE</th>
+          <th>PP</th>
+          <th>DG</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Equipo 1</td>
+          <td>6</td>
+          <td>2</td>
+          <td>2</td>
+          <td>0</td>
+          <td>0</td>
+          <td>+4</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="section">
+    <h2>Contacto</h2>
+    <p>📲 Escríbenos por WhatsApp o síguenos en redes sociales:</p>
+    <div class="social-links">
+      <a href="https://wa.me/123456789" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Los Cardales Fútbol | Todos los derechos reservados</p>
+  </footer>
+
+  <script src="./js/script.js"></script>
 </body>
 </html>
