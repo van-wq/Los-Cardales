@@ -1,49 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Fixture | Los Cardales</title>
-    <link rel="stylesheet" href="css/estilo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixture | Los Cardales Fútbol</title>
+  <link rel="stylesheet" href="./css/estilo.css">
 </head>
 <body>
-    <header>
-        <h1>Campeonato Los Cardales</h1>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="equipos.html">Equipos</a>
-            <a href="fixture.html">Fixture</a>
-            <a href="posiciones.html">Posiciones</a>
-            <a href="galeria.html">Galería</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-    </header>
-    <main>
-        <h2>Fixture</h2>
-        <p>El fixture se actualiza cada sábado.</p>
-        <table>
-            <thead>
-                <tr>
-                    <th>Fecha</th>
-                    <th>Hora</th>
-                    <th>Equipo 1</th>
-                    <th>Equipo 2</th>
-                    <th>Cancha</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>16/08/2025</td>
-                    <td>10:00</td>
-                    <td>Equipo 1</td>
-                    <td>Equipo 2</td>
-                    <td>Cardales 1</td>
-                </tr>
-                <!-- Más filas aquí -->
-            </tbody>
-        </table>
-    </main>
-    <footer>
-        <p>&copy; 2025 Los Cardales. Todos los derechos reservados.</p>
-    </footer>
+  <header>
+    <div class="logo">
+      <img src="./img/logo.jpg" alt="Los Cardales Logo">
+      <h1>Los Cardales</h1>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="equipos.html">Equipos</a></li>
+        <li><a href="fixture.html" class="active">Fixture</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="posiciones.html">Tabla</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </header>
+<main>
+  <section class="section">
+    <h2>Fixture del Campeonato</h2>
+    <p>Aquí irá el cronograma de partidos.</p>
+  </section>
+</main>
+  <footer>
+    <p>© 2025 Los Cardales Fútbol</p>
+  </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>

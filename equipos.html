@@ -1,49 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Equipos | Los Cardales</title>
-    <link rel="stylesheet" href="css/estilo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipos | Los Cardales Fútbol</title>
+  <link rel="stylesheet" href="./css/estilo.css">
 </head>
 <body>
-    <header>
-        <h1>Campeonato Los Cardales</h1>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="equipos.html">Equipos</a>
-            <a href="fixture.html">Fixture</a>
-            <a href="posiciones.html">Posiciones</a>
-            <a href="galeria.html">Galería</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-    </header>
-    <main>
-        <h2>Equipos por Categoría</h2>
-        <section>
-            <h3>Libre</h3>
-            <ul>
-                <li>Equipo 1</li>
-                <li>Equipo 2</li>
-                <li>Equipo 3</li>
-            </ul>
-        </section>
-        <section>
-            <h3>+30</h3>
-            <ul>
-                <li>Equipo A</li>
-                <li>Equipo B</li>
-            </ul>
-        </section>
-        <section>
-            <h3>+40</h3>
-            <ul>
-                <li>Equipo X</li>
-                <li>Equipo Y</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Los Cardales. Todos los derechos reservados.</p>
-    </footer>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="./img/logo.jpg" alt="Los Cardales Logo">
+      <h1>Los Cardales</h1>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="equipos.html" class="active">Equipos</a></li>
+        <li><a href="fixture.html">Fixture</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="posiciones.html">Tabla</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </header>
+
+  <!-- Contenido -->
+  <main>
+    <section class="section">
+      <h2>Categorías de Equipos</h2>
+      <p>Selecciona la categoría para ver los equipos:</p>
+
+      <div class="categorias">
+        <a href="Equipos/libre.html" class="btn-categoria">⚽ Categoría Libre</a>
+        <a href="Equipos/mas30.html" class="btn-categoria">🏆 Categoría MASTER +30</a>
+        <a href="Equipos/mas40.html" class="btn-categoria">🔥 Categoría SENIOR +40</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Los Cardales Fútbol | Todos los derechos reservados</p>
+  </footer>
+
+  <script src="./js/main.js"></script>
 </body>
 </html>
