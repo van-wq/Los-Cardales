@@ -42,16 +42,6 @@ header h1 {
   cursor: pointer;
 }
 
-/* Hero */
-.hero {
-  height: 70vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(135deg, #ff0000, #ffcc00, #000);
-  text-align: center;
-}
 
 .hero h2 {
   font-size: 2.5rem;
@@ -135,3 +125,32 @@ footer {
     display: block;
   }
 }
+/* Logo en el header */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+/* Hero con imagen de fondo y degradado */
+.hero {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* Degradado + imagen */
+  background: 
+    linear-gradient(135deg, rgba(255,0,0,0.6), rgba(255,204,0,0.6), rgba(0,0,0,0.7)),
+    url("../img/fondo-inicio.png") center/cover no-repeat;
+
+  text-align: center;
+  color: #fff;
+}
+
