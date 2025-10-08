@@ -24,31 +24,382 @@
     </nav>
     <div class="menu-toggle" id="menu-toggle">☰</div>
   </header>
-<main>
-  <section class="section">
-    <h2>Tabla de Posiciones</h2>
-    <table>
-      <tr>
-        <th>Equipo</th>
-        <th>PJ</th>
-        <th>PG</th>
-        <th>PE</th>
-        <th>PP</th>
-        <th>Puntos</th>
-      </tr>
-      <tr>
-        <td>Equipo 1</td>
-        <td>3</td>
-        <td>2</td>
-        <td>1</td>
-        <td>0</td>
-        <td>7</td>
-      </tr>
-    </table>
-  </section>
-</main>
+  <main>
+    <section class="section section-categorias">
+      <h2>Categorías del Torneo</h2>
+      <p>Elegí la categoría que querés consultar:</p>
+      <div class="categorias">
+        <a href="#tabla-libre" class="btn-categoria">⚽ Categoría Libre</a>
+        <a href="#tabla-master30" class="btn-categoria">🏆 Categoría MASTER +30</a>
+        <a href="#tabla-senior40" class="btn-categoria">🔥 Categoría SENIOR +40</a>
+      </div>
+    </section>
+
+    <section id="tabla-libre" class="section section-posiciones">
+      <div class="posiciones-intro">
+        <h2>Tabla de Posiciones</h2>
+        <p>
+          Actualización semanal del torneo Los Cardales con el resumen de partidos jugados,
+          goles a favor y en contra para cada zona. Las primeras posiciones se destacan para
+          que puedas identificar rápidamente a los equipos que hoy estarían clasificando.
+        </p>
+      </div>
+      <div class="zonas-container">
+        <article class="zona">
+          <header class="zona-encabezado">
+            <h3>Zona A</h3>
+            <span class="zona-badge">Grupo A</span>
+          </header>
+          <div class="tabla-wrapper">
+            <table class="tabla-posiciones">
+              <thead>
+                <tr>
+                  <th scope="col">Pos</th>
+                  <th scope="col" class="col-club">Club</th>
+                  <th scope="col">Pts</th>
+                  <th scope="col">GF</th>
+                  <th scope="col">GC</th>
+                  <th scope="col">Dif</th>
+                  <th scope="col">PJ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="clasificado">
+                  <td>1</td>
+                  <td>Club Pasaje Unidos</td>
+                  <td>13</td>
+                  <td>21</td>
+                  <td>9</td>
+                  <td>+12</td>
+                  <td>6</td>
+                </tr>
+                <tr class="clasificado">
+                  <td>2</td>
+                  <td>Tercer Tiempo</td>
+                  <td>13</td>
+                  <td>19</td>
+                  <td>9</td>
+                  <td>+10</td>
+                  <td>6</td>
+                </tr>
+                <tr class="clasificado">
+                  <td>3</td>
+                  <td>Barrio Belgrano</td>
+                  <td>12</td>
+                  <td>18</td>
+                  <td>9</td>
+                  <td>+9</td>
+                  <td>5</td>
+                </tr>
+                <tr class="clasificado">
+                  <td>4</td>
+                  <td>San Miguel VL</td>
+                  <td>10</td>
+                  <td>24</td>
+                  <td>17</td>
+                  <td>+7</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Boey FC</td>
+                  <td>10</td>
+                  <td>20</td>
+                  <td>20</td>
+                  <td>0</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Club Barrio AISA</td>
+                  <td>9</td>
+                  <td>16</td>
+                  <td>18</td>
+                  <td>-2</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Aston Villa</td>
+                  <td>6</td>
+                  <td>13</td>
+                  <td>22</td>
+                  <td>-9</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>La Esquina</td>
+                  <td>4</td>
+                  <td>10</td>
+                  <td>20</td>
+                  <td>-10</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>31 de Agosto</td>
+                  <td>2</td>
+                  <td>15</td>
+                  <td>26</td>
+                  <td>-11</td>
+                  <td>6</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+        <article class="zona">
+          <header class="zona-encabezado">
+            <h3>Zona B</h3>
+            <span class="zona-badge">Grupo B</span>
+          </header>
+          <div class="tabla-wrapper">
+            <table class="tabla-posiciones">
+              <thead>
+                <tr>
+                  <th scope="col">Pos</th>
+                  <th scope="col" class="col-club">Club</th>
+                  <th scope="col">Pts</th>
+                  <th scope="col">GF</th>
+                  <th scope="col">GC</th>
+                  <th scope="col">Dif</th>
+                  <th scope="col">PJ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="clasificado">
+                  <td>1</td>
+                  <td>La Bombilla FC</td>
+                  <td>19</td>
+                  <td>37</td>
+                  <td>9</td>
+                  <td>+28</td>
+                  <td>7</td>
+                </tr>
+                <tr class="clasificado">
+                  <td>2</td>
+                  <td>Gaona FC</td>
+                  <td>19</td>
+                  <td>24</td>
+                  <td>8</td>
+                  <td>+16</td>
+                  <td>7</td>
+                </tr>
+                <tr class="clasificado">
+                  <td>3</td>
+                  <td>Alex FC</td>
+                  <td>12</td>
+                  <td>23</td>
+                  <td>24</td>
+                  <td>-1</td>
+                  <td>7</td>
+                </tr>
+                <tr class="clasificado">
+                  <td>4</td>
+                  <td>Olimpo</td>
+                  <td>10</td>
+                  <td>17</td>
+                  <td>18</td>
+                  <td>-1</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>La Primavera</td>
+                  <td>9</td>
+                  <td>19</td>
+                  <td>25</td>
+                  <td>-6</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Chañar Central</td>
+                  <td>9</td>
+                  <td>17</td>
+                  <td>26</td>
+                  <td>-9</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Matienzo FC</td>
+                  <td>7</td>
+                  <td>20</td>
+                  <td>26</td>
+                  <td>-6</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>Barrio Parque</td>
+                  <td>7</td>
+                  <td>16</td>
+                  <td>27</td>
+                  <td>-11</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>Pos Refuerzo</td>
+                  <td>6</td>
+                  <td>15</td>
+                  <td>29</td>
+                  <td>-14</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Ampliación FC</td>
+                  <td>3</td>
+                  <td>14</td>
+                  <td>38</td>
+                  <td>-24</td>
+                  <td>7</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+        <article class="zona">
+          <header class="zona-encabezado">
+            <h3>Zona C</h3>
+            <span class="zona-badge">Grupo C</span>
+          </header>
+          <div class="tabla-wrapper">
+            <table class="tabla-posiciones">
+              <thead>
+                <tr>
+                  <th scope="col">Pos</th>
+                  <th scope="col" class="col-club">Club</th>
+                  <th scope="col">Pts</th>
+                  <th scope="col">GF</th>
+                  <th scope="col">GC</th>
+                  <th scope="col">Dif</th>
+                  <th scope="col">PJ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="clasificado">
+                  <td>1</td>
+                  <td>Samu FC</td>
+                  <td>19</td>
+                  <td>28</td>
+                  <td>9</td>
+                  <td>+19</td>
+                  <td>7</td>
+                </tr>
+                <tr class="clasificado">
+                  <td>2</td>
+                  <td>Santo Domingo</td>
+                  <td>19</td>
+                  <td>25</td>
+                  <td>11</td>
+                  <td>+14</td>
+                  <td>7</td>
+                </tr>
+                <tr class="clasificado">
+                  <td>3</td>
+                  <td>La Amistad</td>
+                  <td>15</td>
+                  <td>24</td>
+                  <td>13</td>
+                  <td>+11</td>
+                  <td>7</td>
+                </tr>
+                <tr class="clasificado">
+                  <td>4</td>
+                  <td>Cordillera</td>
+                  <td>15</td>
+                  <td>25</td>
+                  <td>16</td>
+                  <td>+9</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Club Social</td>
+                  <td>11</td>
+                  <td>22</td>
+                  <td>26</td>
+                  <td>-4</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>San Antonio</td>
+                  <td>10</td>
+                  <td>18</td>
+                  <td>18</td>
+                  <td>0</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Barrio 24 Juniors</td>
+                  <td>10</td>
+                  <td>20</td>
+                  <td>23</td>
+                  <td>-3</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>Pumas FC</td>
+                  <td>7</td>
+                  <td>17</td>
+                  <td>19</td>
+                  <td>-2</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>La Barra FC</td>
+                  <td>6</td>
+                  <td>17</td>
+                  <td>24</td>
+                  <td>-7</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Chacarita del Norte</td>
+                  <td>3</td>
+                  <td>10</td>
+                  <td>27</td>
+                  <td>-17</td>
+                  <td>7</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="tabla-master30" class="section section-posiciones">
+      <div class="posiciones-intro">
+        <h2>MASTER +30</h2>
+        <p>Estamos cargando los resultados de la categoría MASTER +30. Pronto vas a poder consultar las posiciones completas.</p>
+      </div>
+      <div class="tabla-placeholder">
+        <p>Las tablas de esta categoría estarán disponibles en breve.</p>
+      </div>
+    </section>
+
+    <section id="tabla-senior40" class="section section-posiciones">
+      <div class="posiciones-intro">
+        <h2>SENIOR +40</h2>
+        <p>Muy pronto vas a encontrar acá la tabla actualizada de la categoría SENIOR +40.</p>
+      </div>
+      <div class="tabla-placeholder">
+        <p>Seguimos recopilando resultados para esta división.</p>
+      </div>
+    </section>
+  </main>
   <footer>
-    <p>© 2025 Los Cardales Fútbol</p>
+    <p>© 2025 Los Cardales Fútbol | Todos los derechos reservados</p>
   </footer>
   <script src="js/main.js"></script>
 </body>

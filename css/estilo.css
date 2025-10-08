@@ -238,6 +238,44 @@ main {
   transform: scale(1.05);
   opacity: 0.9;
 }
+
+.section-categorias {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-categorias p {
+  margin: 10px auto 0;
+  max-width: 520px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.section-posiciones + .section-posiciones {
+  margin-top: 20px;
+}
+
+.tabla-placeholder {
+  margin: 40px auto 0;
+  padding: 30px 25px;
+  max-width: 620px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  border: 1px dashed rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.tabla-placeholder p {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .section-categorias .categorias {
+    flex-direction: row;
+    justify-content: center;
+    max-width: none;
+  }
+}
 /* Tablas de equipos */
 .tabla-equipos {
   width: 100%;
@@ -271,3 +309,125 @@ main {
   height: auto;
 }
 
+
+/* Tabla de posiciones */
+.section-posiciones {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.section-posiciones h2 {
+  margin-bottom: 10px;
+}
+
+.posiciones-intro p {
+  margin: 0 auto;
+  max-width: 850px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.zonas-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.zona {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+}
+
+.zona-encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.zona-encabezado h3 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.zona-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #ff0000, #ffcc00);
+  color: #000;
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tabla-wrapper {
+  overflow-x: auto;
+}
+
+.tabla-posiciones {
+  width: 100%;
+  min-width: 520px;
+  border-collapse: collapse;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.tabla-posiciones th,
+.tabla-posiciones td {
+  padding: 12px 10px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.tabla-posiciones thead th {
+  background: linear-gradient(90deg, #ff0000, #ffcc00, #000);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+}
+
+.tabla-posiciones tbody tr:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.tabla-posiciones tbody tr:hover {
+  background: rgba(255, 204, 0, 0.2);
+  transition: background 0.2s ease;
+}
+
+.tabla-posiciones .col-club {
+  text-align: left;
+  padding-left: 14px;
+}
+
+.tabla-posiciones .clasificado {
+  background: rgba(0, 128, 0, 0.35);
+}
+
+.tabla-posiciones .clasificado:nth-child(odd) {
+  background: rgba(0, 128, 0, 0.45);
+}
+
+.tabla-posiciones .clasificado td {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .section-posiciones {
+    text-align: center;
+  }
+
+  .tabla-posiciones {
+    min-width: 480px;
+  }
+
+  .tabla-posiciones .col-club {
+    text-align: left;
+  }
+}
